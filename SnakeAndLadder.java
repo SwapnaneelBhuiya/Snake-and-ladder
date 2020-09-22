@@ -2,7 +2,7 @@ public class SnakeAndLadder
 {
     public static void main(String args[])
 {
-    int start_pos=0, start2=0;int n=0,m=0;int lad_1=0,lad_2=0;
+    int start_pos=0, start2=0;int n=0,m=0; int lad_1=0,lad_2=0;
     while(start_pos!=100||start2!=100) {
         lad_1=0;
         int die_number_1 = (int) (Math.random() * 6 + 1);
