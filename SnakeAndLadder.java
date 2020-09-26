@@ -3,15 +3,16 @@ public class SnakeAndLadder
     public static void main(String args[])
 {
     int start_pos=0, start2=0;int n=0,m=0;int lad_1=0,lad_2=0;
-    while(start_pos!=100||start2!=100) {
+    while(start_pos!=100&&start2!=100) {
         lad_1=0;
         int die_number_1 = (int) (Math.random() * 6 + 1);
         int die_number_2 = (int) (Math.random() * 6 + 1);
-        n++;m++;
+        //n++;m++;
         int option_1 = (int) (Math.random() * 3 + 1);
         int option_2 = (int) (Math.random() * 3 + 1);
         if(lad_2!=1){
         switch (option_1) {
+                n++;
             case 1:
                 start_pos += 0;
                 break;
@@ -33,6 +34,7 @@ public class SnakeAndLadder
         if(lad_1==1)
             continue;
         lad_2=0;
+        m++;
         switch (option_2) {
             case 1:
                 start2 += 0;
